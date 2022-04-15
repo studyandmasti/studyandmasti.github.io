@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us" class="initial astro-PI5PU6TF">
+	<head>
+		<!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="icon" type="image/svg+xml" href="/astro.svg">
+<link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+
+<link rel="sitemap" href="/sitemap.xml">
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+<script src="/make-scrollable-code-focusable.js"></script>
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('theme-dark');
+	} else {
+		root.classList.remove('theme-dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEL60V1WM9" is:inline></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TEL60V1WM9');
+</script> -->
+
+		<!-- Page Metadata --><link rel="canonical" href="http://localhost:3000/en/mhah-panchang/typescript/calculate/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="Calculate(...) 🧮 📖 Study And Masti">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:3000/en/mhah-panchang/typescript/calculate/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true">
+<meta property="og:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+<meta name="description" property="og:description" content="Usage of Calculate function and its sub-functions">
+<meta property="og:site_name" content="Study And Masti">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="astrodotbuild">
+<meta name="twitter:title" content="Calculate(...) 🧮 📖 Study And Masti">
+<meta name="twitter:description" content="Usage of Calculate function and its sub-functions">
+<meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true">
+<meta name="twitter:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+
+		<title>Calculate(...) 🧮 📖 Study And Masti</title>
+		
+	<link rel="stylesheet" href="/assets/asset.1d3c55cb.css"></link><style astro-style="true">astro-root, astro-fragment { display: contents; }</style><script type="module" data-astro-component-hydration astro-script="/en/mhah-panchang/typescript/calculate/script-0">import setup from '../../../../entry.3dd0b2fa.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("Z1Ii0gA", {name:"SidebarToggle",value: true}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("../../../../entry.ceed7248.js"), import("../../../../entry.97a7a2a1.js")]);
+  return (el, children) => hydrate(el)(Component, {"class":"astro-4ZVSYGWU"}, children);
+
+});
+</script>
+<script type="module" data-astro-component-hydration astro-script="/en/mhah-panchang/typescript/calculate/script-1">import setup from '../../../../entry.e67581d4.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("qs04g", {name:"TableOfContents",value: "(min-width: 50em)"}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("../../../../entry.f7d6506d.js"), import("../../../../entry.97a7a2a1.js")]);
+  return (el, children) => hydrate(el)(Component, {"headers":[{"depth":2,"slug":"day","text":"Day"},{"depth":2,"slug":"paksha","text":"Paksha"},{"depth":2,"slug":"tithi","text":"Tithi"},{"depth":2,"slug":"nakshatra","text":"Nakshatra"},{"depth":2,"slug":"karna","text":"Karna"},{"depth":2,"slug":"yoga","text":"Yoga"},{"depth":2,"slug":"ayanamsa","text":"Ayanamsa"},{"depth":2,"slug":"raasi","text":"Raasi"},{"depth":2,"slug":"julian-date","text":"Julian Date"}],"class":"astro-2YE6FU27"}, children);
+
+});
+</script>
+<script type="module" data-astro-component-hydration astro-script="/en/mhah-panchang/typescript/calculate/script-2">import setup from '../../../../entry.9125fc96.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("ZMiuuH", {name:"ThemeToggleButton",value: true}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("../../../../entry.ee6e0c44.js"), import("../../../../entry.97a7a2a1.js")]);
+  return (el, children) => hydrate(el)(Component, {"class":"astro-ZVQSX46V"}, children);
+
+});
+</script>
+</head>
+
+	<body>
+		<header class="astro-4ZVSYGWU">
+	<a href="#article" class="sr-only focus:not-sr-only skiplink astro-CXECKFLK"><span class="astro-CXECKFLK">Skip to Content</span></a>
+
+
+
+	<nav class="nav-wrapper astro-4ZVSYGWU" title="Top Navigation">
+		<div class="menu-toggle astro-4ZVSYGWU">
+			<astro-root uid="Z1Ii0gA"><button type="button" aria-pressed="false" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><span class="sr-only">Toggle sidebar</span></button></astro-root>
+		</div>
+		<div class="logo flex astro-4ZVSYGWU">
+			<img src="../../../../mahaPanchangLogo.webp" alt="Logo" height="75px" width="95px" class="astro-4ZVSYGWU">
+			<a href="/" class="astro-4ZVSYGWU">
+				<h1 class="astro-4ZVSYGWU">mhah-panchang</h1>
+			</a>
+		</div>
+		<div style="flex-grow: 1;" class="astro-4ZVSYGWU"></div>
+		
+		
+	</nav>
+</header>
+
+
+
+		<main class="layout astro-PI5PU6TF">
+			<aside id="grid-left" class="grid-sidebar astro-PI5PU6TF" title="Site Navigation">
+				<nav aria-labelledby="grid-left" class="astro-UFU4TXSG">
+	<ul class="nav-groups astro-UFU4TXSG">
+		<li class="astro-UFU4TXSG">
+				<div class="nav-group astro-UFU4TXSG">
+					<h2 class="nav-group-title astro-UFU4TXSG"></h2>
+					<ul class="astro-UFU4TXSG">
+						
+					</ul>
+				</div>
+			</li><li class="astro-UFU4TXSG">
+				<div class="nav-group astro-UFU4TXSG">
+					<h2 class="nav-group-title astro-UFU4TXSG">Guide</h2>
+					<ul class="astro-UFU4TXSG">
+						<li class="nav-link astro-UFU4TXSG">
+								<a href="/en/mhah-panchang/typescript/getting_started" aria-current="false" class="astro-UFU4TXSG">
+									Getting Started
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li><li class="astro-UFU4TXSG">
+				<div class="nav-group astro-UFU4TXSG">
+					<h2 class="nav-group-title astro-UFU4TXSG">Useful Function</h2>
+					<ul class="astro-UFU4TXSG">
+						<li class="nav-link astro-UFU4TXSG">
+								<a href="/en/mhah-panchang/typescript/calculate" aria-current="page" class="astro-UFU4TXSG">
+									Calculate(...)
+								</a>
+							</li><li class="nav-link astro-UFU4TXSG">
+								<a href="/en/mhah-panchang/typescript/calendar" aria-current="false" class="astro-UFU4TXSG">
+									Calendar(...)
+								</a>
+							</li><li class="nav-link astro-UFU4TXSG">
+								<a href="/en/mhah-panchang/typescript/customize_name" aria-current="false" class="astro-UFU4TXSG">
+									Customize Name
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li>
+	</ul>
+</nav>
+
+<script>
+	window.addEventListener('DOMContentLoaded', (event) => {
+		var target = document.querySelector('[aria-current="page"]');
+		if (target && target.offsetTop > window.innerHeight - 100) {
+			document.querySelector('.nav-groups').scrollTop = target.offsetTop;
+		}
+	});
+</script>
+
+
+
+			</aside>
+			<div id="grid-main" class="astro-PI5PU6TF">
+				<article id="article" class="content astro-54EAHCNV">
+	<section class="main-section astro-54EAHCNV">
+		<h1 class="content-title astro-54EAHCNV" id="overview">Calculate(...) 🧮</h1>
+		<!-- <nav class="block sm:hidden">
+			<TableOfContents client:media="(max-width: 50em)" {headers} />
+		</nav> -->
+		<p><strong>Overview</strong></p><p>Here the Panchang calculation is focused on Date and Time taking in consideration the Julian Date, Sun and Moon.</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E">//calculate(date)</span></span>
+<span class="line"><span style="color: #8B949E">//Example</span></span>
+<span class="line"><span style="color: #FF7B72">var</span><span style="color: #C9D1D9"> mhahObj </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> obj.</span><span style="color: #D2A8FF">calculate</span><span style="color: #C9D1D9">(</span><span style="color: #FF7B72">new</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">Date</span><span style="color: #C9D1D9">(</span><span style="color: #A5D6FF">&quot;2022-02-21T11:34:11.000Z&quot;</span><span style="color: #C9D1D9">));</span></span>
+<span class="line"><span style="color: #C9D1D9">console.</span><span style="color: #D2A8FF">log</span><span style="color: #C9D1D9">(mhahObj.Day);</span></span></code></pre><p><strong>Inputs</strong></p><table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>date</code></td>
+<td align="left"><code>Date</code></td>
+<td align="left">Date for which details is needed</td>
+</tr>
+</tbody>
+</table><a name="calculate+Day">
+</a><h2 id="day">Day</h2><p><strong>Example</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">console.</span><span style="color: #D2A8FF">log</span><span style="color: #C9D1D9">(mhahObj.Day);</span></span></code></pre><p><strong>Output</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">{ </span><span style="color: #79C0FF">&quot;ino&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">, </span><span style="color: #79C0FF">&quot;name&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #A5D6FF">&quot;ସୋମବାର&quot;</span><span style="color: #C9D1D9">, </span><span style="color: #79C0FF">&quot;name_en_UK&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #A5D6FF">&quot;Monday&quot;</span><span style="color: #C9D1D9"> }</span></span></code></pre><table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Day in custom language (<em>default</em>: Odia)</td>
+</tr>
+<tr>
+<td align="left"><code>name_en_UK</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Day in English (UK)</td>
+</tr>
+<tr>
+<td align="left"><code>ino</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">Index no. of Day</td>
+</tr>
+</tbody>
+</table><a name="calculate+Paksha">
+</a><h2 id="paksha">Paksha</h2><p><strong>Example</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">console.</span><span style="color: #D2A8FF">log</span><span style="color: #C9D1D9">(mhahObj.Paksha);</span></span></code></pre><p><strong>Output</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">{</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">&quot;ino&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">1</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">&quot;name&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #A5D6FF">&quot;କୃଷ୍ଣ&quot;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">&quot;name_en_IN&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #A5D6FF">&quot;Krishna&quot;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">&quot;name_en_UK&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #A5D6FF">&quot;Waning Moon&quot;</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span></code></pre><table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Tithi in custom language (<em>default</em>: Odia)</td>
+</tr>
+<tr>
+<td align="left"><code>name_en_IN</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Tithi in English (India)</td>
+</tr>
+<tr>
+<td align="left"><code>name_en_UK</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Tithi in English (UK)</td>
+</tr>
+<tr>
+<td align="left"><code>ino</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">Index no. of Tithi</td>
+</tr>
+</tbody>
+</table><a name="calculate+Tithi">
+</a><h2 id="tithi">Tithi</h2><p><strong>Example</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">console.</span><span style="color: #D2A8FF">log</span><span style="color: #C9D1D9">(mhahObj.Tithi);</span></span></code></pre><p><strong>Output</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">{</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">name</span><span style="color: #C9D1D9">: </span><span style="color: #FFA198; font-style: italic">&#39;ପଞ୍ଚମୀ&#39;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">name_en_IN</span><span style="color: #C9D1D9">: </span><span style="color: #FFA198; font-style: italic">&#39;Panchami&#39;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">ino</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">19</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">start</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2022-02-20</span><span style="color: #FFA198; font-style: italic">T</span><span style="color: #79C0FF">15</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">35</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">33.000</span><span style="color: #FFA198; font-style: italic">Z</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">end</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2022-02-21</span><span style="color: #FFA198; font-style: italic">T</span><span style="color: #79C0FF">14</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">27</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">50.000</span><span style="color: #FFA198; font-style: italic">Z</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span></code></pre><table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Tithi in custom language (<em>default</em>: Odia)</td>
+</tr>
+<tr>
+<td align="left"><code>name_en_IN</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Tithi in English (India)</td>
+</tr>
+<tr>
+<td align="left"><code>ino</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">Index no. of Tithi</td>
+</tr>
+<tr>
+<td align="left"><code>start</code></td>
+<td align="left"><code>Date</code></td>
+<td align="left">Start time of Tithi</td>
+</tr>
+<tr>
+<td align="left"><code>end</code></td>
+<td align="left"><code>Date</code></td>
+<td align="left">end time of Tithi</td>
+</tr>
+</tbody>
+</table><a name="calculate+Nakshatra">
+</a><h2 id="nakshatra">Nakshatra</h2><p><strong>Example</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">console.</span><span style="color: #D2A8FF">log</span><span style="color: #C9D1D9">(mhahObj.Nakshatra);</span></span></code></pre><p><strong>Output</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">{</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">name</span><span style="color: #C9D1D9">: </span><span style="color: #FFA198; font-style: italic">&#39;ସ୍ଵାତୀ&#39;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">name_en_IN</span><span style="color: #C9D1D9">: </span><span style="color: #FFA198; font-style: italic">&#39;Swati&#39;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">ino</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">14</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">start</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2022-02-21</span><span style="color: #FFA198; font-style: italic">T</span><span style="color: #79C0FF">10</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">46</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">30.000</span><span style="color: #FFA198; font-style: italic">Z</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">end</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2022-02-22</span><span style="color: #FFA198; font-style: italic">T</span><span style="color: #79C0FF">10</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">05</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">49.000</span><span style="color: #FFA198; font-style: italic">Z</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span></code></pre><table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Nakshatra in custom language (<em>default</em>: Odia)</td>
+</tr>
+<tr>
+<td align="left"><code>name_en_IN</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Nakshatra in English (India)</td>
+</tr>
+<tr>
+<td align="left"><code>ino</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">Index no. of Nakshatra</td>
+</tr>
+<tr>
+<td align="left"><code>start</code></td>
+<td align="left"><code>Date</code></td>
+<td align="left">Start time of Nakshatra</td>
+</tr>
+<tr>
+<td align="left"><code>end</code></td>
+<td align="left"><code>Date</code></td>
+<td align="left">end time of Nakshatra</td>
+</tr>
+</tbody>
+</table><a name="calculate+Karna">
+</a><h2 id="karna">Karna</h2><p><strong>Example</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">console.</span><span style="color: #D2A8FF">log</span><span style="color: #C9D1D9">(mhahObj.Karna);</span></span></code></pre><p><strong>Output</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">{</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">name</span><span style="color: #C9D1D9">: </span><span style="color: #FFA198; font-style: italic">&#39;ତୈତିଳ&#39;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">name_en_IN</span><span style="color: #C9D1D9">: </span><span style="color: #FFA198; font-style: italic">&#39;Taitula&#39;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">ino</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">3</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">start</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2022-02-21</span><span style="color: #FFA198; font-style: italic">T</span><span style="color: #79C0FF">03</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">03</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">39.000</span><span style="color: #FFA198; font-style: italic">Z</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">end</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2022-02-21</span><span style="color: #FFA198; font-style: italic">T</span><span style="color: #79C0FF">14</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">27</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">50.000</span><span style="color: #FFA198; font-style: italic">Z</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span></code></pre><table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Karna in custom language (<em>default</em>: Odia)</td>
+</tr>
+<tr>
+<td align="left"><code>name_en_IN</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Karna in English (India)</td>
+</tr>
+<tr>
+<td align="left"><code>ino</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">Index no. of Karna</td>
+</tr>
+<tr>
+<td align="left"><code>start</code></td>
+<td align="left"><code>Date</code></td>
+<td align="left">Start time of Karna</td>
+</tr>
+<tr>
+<td align="left"><code>end</code></td>
+<td align="left"><code>Date</code></td>
+<td align="left">end time of Karna</td>
+</tr>
+</tbody>
+</table><a name="calculate+Yoga">
+</a><h2 id="yoga">Yoga</h2><p><strong>Example</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">console.</span><span style="color: #D2A8FF">log</span><span style="color: #C9D1D9">(mhahObj.Yoga);</span></span></code></pre><p><strong>Output</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">{</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">name</span><span style="color: #C9D1D9">: </span><span style="color: #FFA198; font-style: italic">&#39;ବୃଦ୍ଧି&#39;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">name_en_IN</span><span style="color: #C9D1D9">: </span><span style="color: #FFA198; font-style: italic">&#39;Vridhi&#39;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">ino</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">10</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">start</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2022-02-21</span><span style="color: #FFA198; font-style: italic">T</span><span style="color: #79C0FF">07</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">34</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">10.000</span><span style="color: #FFA198; font-style: italic">Z</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #FFA198; font-style: italic">end</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2022-02-22</span><span style="color: #FFA198; font-style: italic">T</span><span style="color: #79C0FF">05</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">20</span><span style="color: #FFA198; font-style: italic">:</span><span style="color: #79C0FF">00.000</span><span style="color: #FFA198; font-style: italic">Z</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span></code></pre><table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Yoga in custom language (<em>default</em>: Odia)</td>
+</tr>
+<tr>
+<td align="left"><code>name_en_IN</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Yoga in English (UK)</td>
+</tr>
+<tr>
+<td align="left"><code>ino</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">Index no. of Yoga</td>
+</tr>
+<tr>
+<td align="left"><code>start</code></td>
+<td align="left"><code>Date</code></td>
+<td align="left">Start time of Yoga</td>
+</tr>
+<tr>
+<td align="left"><code>end</code></td>
+<td align="left"><code>Date</code></td>
+<td align="left">end time of Yoga</td>
+</tr>
+</tbody>
+</table><a name="calculate+Ayanamsa">
+</a><h2 id="ayanamsa">Ayanamsa</h2><p><strong>Example</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">console.</span><span style="color: #D2A8FF">log</span><span style="color: #C9D1D9">(mhahObj.Ayanamsa);</span></span></code></pre><p><strong>Output</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">{ </span><span style="color: #79C0FF">&quot;name&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #FFA198; font-style: italic">`</span><span style="color: #79C0FF">24</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">9</span><span style="color: #FFA198; font-style: italic">&#39;</span><span style="color: #79C0FF">48</span><span style="color: #A5D6FF">&quot;` }</span></span></code></pre><a name="calculate+Raasi">
+</a><h2 id="raasi">Raasi</h2><p><strong>Example</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">console.</span><span style="color: #D2A8FF">log</span><span style="color: #C9D1D9">(mhahObj.Raasi);</span></span></code></pre><p><strong>Output</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">{ </span><span style="color: #79C0FF">&quot;name&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #A5D6FF">&quot;ତୁଳା&quot;</span><span style="color: #C9D1D9">, </span><span style="color: #79C0FF">&quot;ino&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">6</span><span style="color: #C9D1D9">, </span><span style="color: #79C0FF">&quot;name_en_UK&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #A5D6FF">&quot;Libra&quot;</span><span style="color: #C9D1D9"> }</span></span></code></pre><table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>name</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Zodiac sign in custom language (<em>default</em>: Odia)</td>
+</tr>
+<tr>
+<td align="left"><code>name_en_UK</code></td>
+<td align="left"><code>string</code></td>
+<td align="left">Zodiac sign in English (UK)</td>
+</tr>
+<tr>
+<td align="left"><code>ino</code></td>
+<td align="left"><code>number</code></td>
+<td align="left">Index no. of Zodiac sign</td>
+</tr>
+</tbody>
+</table><a name="calculate+Juldate">
+</a><h2 id="julian-date">Julian Date</h2><p><strong>Example</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">console.</span><span style="color: #D2A8FF">log</span><span style="color: #C9D1D9">(mhahObj.Julian);</span></span></code></pre><p><strong>Output</strong></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">{ </span><span style="color: #79C0FF">&quot;date&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2459632.211111111</span><span style="color: #C9D1D9">, </span><span style="color: #79C0FF">&quot;day&quot;</span><span style="color: #C9D1D9">: </span><span style="color: #79C0FF">2459632</span><span style="color: #C9D1D9"> }</span></span></code></pre>
+	</section>
+	<nav class="block sm:hidden astro-54EAHCNV">
+		
+<ul class="astro-ZVQSX46V">
+	
+	
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-ZVQSX46V">
+	<astro-root uid="ZMiuuH"><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-root>
+</div>
+
+
+
+	</nav>
+</article>
+
+
+
+			</div>
+			<aside id="grid-right" class="grid-sidebar astro-PI5PU6TF" title="Table of Contents">
+				<nav class="sidebar-nav astro-2YE6FU27" aria-labelledby="grid-right">
+	<div class="sidebar-nav-inner astro-2YE6FU27">
+		<astro-root uid="qs04g"><h2 class="heading">On this page</h2><ul><li class="header-link depth-2"><a href="#overview">Overview</a></li><li class="header-link depth-2"><a href="#day">Day</a></li><li class="header-link depth-2"><a href="#paksha">Paksha</a></li><li class="header-link depth-2"><a href="#tithi">Tithi</a></li><li class="header-link depth-2"><a href="#nakshatra">Nakshatra</a></li><li class="header-link depth-2"><a href="#karna">Karna</a></li><li class="header-link depth-2"><a href="#yoga">Yoga</a></li><li class="header-link depth-2"><a href="#ayanamsa">Ayanamsa</a></li><li class="header-link depth-2"><a href="#raasi">Raasi</a></li><li class="header-link depth-2"><a href="#julian-date">Julian Date</a></li></ul></astro-root>
+		
+<ul class="astro-ZVQSX46V">
+	
+	
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-ZVQSX46V">
+	<astro-root uid="ZMiuuH"><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-root>
+</div>
+
+
+
+	</div>
+</nav>
+
+
+
+			</aside>
+		</main>
+	</body></html>
