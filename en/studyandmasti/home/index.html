@@ -64,7 +64,15 @@
 -->
 
     <title>Home 📖 Study And Masti</title>
-<link rel="stylesheet" href="/assets/asset.9d7f85cc.css"></link><script type="module" src="/entry.e1ab7b89.js" astro-script="/en/studyandmasti/home/script-0"></script>
+<link rel="stylesheet" href="/assets/asset.fea20f5a.css"></link><style astro-style="true">astro-root, astro-fragment { display: contents; }</style><script type="module" src="/entry.e1ab7b89.js" astro-script="/en/studyandmasti/home/script-0"></script>
+<script type="module" data-astro-component-hydration astro-script="/en/studyandmasti/home/script-1">import setup from '../../../entry.9125fc96.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("2ghHwr", {name:"ThemeToggleButton",value: true}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("../../../entry.ee6e0c44.js"), import("../../../entry.97a7a2a1.js")]);
+  return (el, children) => hydrate(el)(Component, {}, children);
+
+});
+</script>
 </head>
 
 <body>
@@ -104,6 +112,10 @@
                     </div>
                 </div>
             </div>
+
+			<!-- <span style="margin: 2rem 0; text-align: left;">
+				<ThemeToggleButton client:visible />
+			</span> -->
         </header>
 
         <main>
@@ -111,16 +123,20 @@
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0 is-revealing">Study And Masti </h1>
+	                        <h1 class="hero-title mt-0 is-revealing">Study And Masti 
+								<span style="margin: 2rem 0; text-align: left;">
+									<astro-root uid="2ghHwr"><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-root>
+								</span>
+							</h1>
 	                        <p class="hero-paragraph is-revealing">We live to learn, create, build and deploy. We belive in making all possible.</p>
-							<div class="hero-form field field-grouped is-revealing">
+							<!-- <div class="hero-form field field-grouped is-revealing">
 	                            <div class="control control-expanded">
-	                                <input class="input" type="email" name="email" placeholder="Your best email…">
+	                                <input class="input" type="email" name="email" placeholder="Your best email&hellip;">
 	                            </div>
 	                            <div class="control">
 	                                <a class="button button-primary button-block" href="#">Notify Me</a>
 	                            </div>
-	                        </div>
+	                        </div> -->
 						</div>
 						<div class="hero-illustration">
 							<div class="hero-bg">
